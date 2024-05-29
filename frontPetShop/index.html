@@ -78,14 +78,13 @@
               </form>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#productos"
+                  <a class="nav-link" aria-current="page" href="#marcas"
                     >Marcas</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#productos">Productos</a>
                 </li>
-                
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -129,7 +128,7 @@
                     <span
                       class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                     >
-                      0+
+                      +0
                     </span>
                   </button>
                 </li>
@@ -137,13 +136,13 @@
             </div>
 
             <div>
-              <button onclick="openLoginModal()" style="color: #05037c">
+              <button id="loginButton" onclick="openLoginModal()">
                 Inicio<i
                   class="fa-solid fa-user fa-lg"
                   style="color: #05037c"
                 ></i>
               </button>
-              <button onclick="openSignupModal()" style="color: #05037c">
+              <button id="signupButton" onclick="openSignUpModal()">
                 Registrate<i
                   class="fa-solid fa-user fa-lg"
                   style="color: #05037c"
@@ -155,7 +154,7 @@
               <div class="modal-content">
                 <span class="close" onclick="closeModal(event)">&times;</span>
                 <h2>Iniciar sesión</h2>
-                <form>
+                <form id="loginForm">
                   <label for="username">Usuario:</label>
                   <input
                     type="text"
@@ -170,7 +169,7 @@
                     name="password"
                     required
                   /><br /><br />
-                  <input type="submit" value="Iniciar sesión" />
+                  <input id="btnLogin" type="submit" value="Iniciar sesión" />
                 </form>
               </div>
             </div>
@@ -215,7 +214,7 @@
                     name="password"
                     required
                   /><br /><br />
-                  <input type="submit" value="Registrarse" />
+                  <input id="btnSignUp" type="submit" value="Registrarse" />
                 </form>
               </div>
             </div>
@@ -362,7 +361,7 @@
         </div>
       </section>
 
-      <section id="productos">
+      <section id="marcas">
         <div class="title_favoritos">
           <h3>Favoritos para tu mascota</h3>
         </div>
@@ -393,7 +392,7 @@
             class="alimento-img"
           />
         </div>
-        <div>
+        <div id="productos">
           <div class="title_productos">
             <h3>Productos</h3>
           </div>
